@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "route": "/v1/test",
+      "method": "GET",
+      "controller": "../controllers/v1/test/test-controller"
+    },{
+      "route": "/v1/test",
+      "method": "POST",
+      "controller": "../controllers/v1/test/test-controller"
+    }
+  ]
+}
