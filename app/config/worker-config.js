@@ -15,7 +15,7 @@ function configureApplication(application) {
   application.use(bodyParser.urlencoded({extended: true}));
   application.use(bodyParser.json());
   application.set('port', (process.env.PORT || 3000));
-  application.use(express.static('app/assets'));
+  application.use(express.static('app/client'));
 
   application.use(function(req, res, next) {
     res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
